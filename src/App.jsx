@@ -8,7 +8,7 @@ import { Projects } from "./components/Proyectos/Projects";
 import { Skills } from "./components/Habilidades/Skills";
 import { Contact } from "./components/Contacto/Contact";
 import { Footer } from "./components/Footer/Footer";
-import { Achievements } from "./components/Logros/achievements";
+import { Achievements } from "./components/Logros/Achievements";
 
 function App() {
   return (
