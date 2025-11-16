@@ -1,0 +1,75 @@
+/* Navbar */
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  width: 100%; /* <<< clave: ocupar todo el ancho */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 1.5rem; /* padding lateral para el contenido */
+  backdrop-filter: blur(12px);
+  background: linear-gradient(
+    to bottom,
+    rgba(5, 5, 5, 0.9),
+    rgba(5, 5, 5, 0.6),
+    transparent
+  );
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo de la imagen del logo */
+.nav-logo img {
+  height: 60px;      /* mismo alto que antes tenía el círculo */
+  width: auto;
+  border-radius: 999px;         /* opcional: lo mantiene redondito si tu logo es cuadrado */
+  border: 2px solid #f97316;    /* opcional: borde como antes */
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 0.95rem;
+}
+
+.nav-links a {
+  color: #e5e5e5;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 0.1rem;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.15rem;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(to right, #f97316, #fb923c);
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.6rem;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    font-size: 0.9rem;
+  }
+}

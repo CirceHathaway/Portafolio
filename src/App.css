@@ -1,0 +1,78 @@
+/* src/App.css */
+
+/* Ahora la app ocupa todo el ancho de la pantalla */
+.app {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0; /* el padding lateral lo damos en las secciones */
+}
+
+/* Secciones genéricas: ahora con padding lateral propio */
+.section {
+  padding: 3rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.section-text {
+  color: #b3b3b3;
+  max-width: 36rem;
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: 1.8rem;
+}
+
+.section, .hero {
+  scroll-margin-top: 90px; /* ajustá el valor según la altura real del nav */
+}
+
+/* Botones genéricos */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem 1.4rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    background 0.15s ease,
+    border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(to right, #f97316, #fb923c);
+  color: #111;
+  box-shadow: 0 12px 25px rgba(249, 115, 22, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 16px 35px rgba(249, 115, 22, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #f5f5f5;
+  border-color: rgba(249, 115, 22, 0.6);
+}
+
+.btn-secondary:hover {
+  background: rgba(249, 115, 22, 0.08);
+}
+
+/* Responsive general */
+@media (max-width: 768px) {
+  .section {
+    padding: 2.5rem 1rem;
+  }
+}
