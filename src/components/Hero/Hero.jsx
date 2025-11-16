@@ -1,5 +1,6 @@
 // src/components/Hero/Hero.jsx
 import "./Hero.css";
+import heroPhoto from "../../../public/Image/perfil.png";
 
 export const Hero = () => {
   return (
@@ -104,7 +105,7 @@ export const Hero = () => {
 
       <div className="hero-avatar">
         <div className="avatar-circle">
-          <span>EG</span>
+          <img src={heroPhoto} alt="Foto de Esteban Gatica" />
         </div>
       </div>
     </section>

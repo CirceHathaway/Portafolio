@@ -7,8 +7,8 @@ export const About = () => {
       <h2 className="section-title">Sobre mí</h2>
       <p className="section-text">
         Soy desarrollador web con foco en interfaces limpias, claras y
-        responsivas. Disfruto trabajar con React, HTML, CSS y JavaScript,
-        y también juego con diseño, data y proyectos creativos.
+        responsivas. Disfruto trabajar con React, HTML, CSS, JavaScript,
+        también juego con lenguajes como Python y hacer analisis de datos.
       </p>
 
       <div className="about-grid">
